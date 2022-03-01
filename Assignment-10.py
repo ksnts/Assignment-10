@@ -43,7 +43,7 @@ def QR_readnw (frame):
     accessH = accessTime.strftime("%I:%M %p") 
     for qrData in dQR:
         decodedQR = qrData.data.decode('utf-8')
-        with open ("QR Text.txt", "w") as textfile: 
+        with open ("QR-Text.txt", "w") as textfile: 
             textfile.write(f"Digital Signature: Accessed: {accessD} at {accessH}\n")
             textfile.write("\n"+decodedQR) 
             #message for letting u know decoding and encoding has been successful
